@@ -22,7 +22,7 @@ public class JpaSecurityApplication {
 		return args -> {
 			users.save(new User("user",encoder.encode("password"),"ROLE_USER"));
 			users.save(new User("admin",encoder.encode("password"),"ROLE_USER,ROLE_ADMIN"));
-			posts.save(new Post("Hello, World!","hello-world","Welcome to my new blog!","Dan Vega"));
+//			posts.save(new Post("Hello, World!","hello-world","Welcome to my new blog!","Dan Vega"));
 		};
 	}
 }
